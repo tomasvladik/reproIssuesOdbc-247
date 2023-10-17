@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>demo.ODBC-247</AssemblyName>
+    <RootNamespace>demo.ODBC-247</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32bit>true</Prefer32bit>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32bit>true</Prefer32bit>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Microsoft.Net.Test.SDK" Version="16.10.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="Moq" Version="4.5.30" />
+    <PackageReference Include="FluentAssertions" Version="5.7.0" />
+  </ItemGroup>
+
+
+</Project>
